@@ -2,11 +2,12 @@
   "name": "text-case-changer",
   "displayName": "text-case-changer",
   "description": "this extension changes case of selected text in editor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "jitendrasoni",
   "engines": {
     "vscode": "^1.81.0"
   },
+  "icon": "images/logo.png",
   "categories": [
     "Other"
   ],
@@ -16,23 +17,65 @@
     "commands": [
       {
         "command": "text-case-changer.uppercase",
-        "title": "Convert to uppercase text"
+        "title": "upper"
       },
       {
         "command": "text-case-changer.lowercase",
-        "title": "Convert to lowercase text"
+        "title": "lower"
       },
       {
         "command": "text-case-changer.camelcase",
-        "title": "Convert to camelcase text"
+        "title": "camel"
       },
       {
         "command": "text-case-changer.snakecase",
-        "title": "Convert to snakecase text"
+        "title": "snake"
       },
       {
         "command": "text-case-changer.capitalize",
-        "title": "Convert to capitalize text"
+        "title": "capital"
+      },
+      {
+        "command": "text-case-changer.pascalcase",
+        "title": "Pascal"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.capitalize",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.uppercase",
+        "key": "ctrl+shift+u",
+        "mac": "cmd+shift+u",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.lowercase",
+        "key": "ctrl+shift+l",
+        "mac": "cmd+shift+l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.camelcase",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+option+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.snakecase",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.pascalcase",
+        "key": "ctrl+shift+p",
+        "mac": "cmd+shift+p",
+        "when": "editorTextFocus"
       }
     ]
   },
