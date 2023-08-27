@@ -21,6 +21,12 @@ function toSnakeCase(text: string): string {
   return words.join('_').toLowerCase();
 }
 
+function toHyphenSeperatedCase(text: string): string {
+  text = text.replace(/-/g, '_');
+  const words = text.split(/(?=[A-Z])|[_-]/);
+  return words.join('-').toLowerCase();
+}
+
 function toCamelCase(text: string): string {
   const words = text.split(/[_-]/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
@@ -41,6 +47,7 @@ export function activate(context: vscode.ExtensionContext) {
     { name: 'snakecase', method: toSnakeCase },
     { name: 'capitalize', method: capitalizeText },
     { name: 'pascalcase', method: toPascalCase },
+    { name: 'hyphenseperated', method: toHyphenSeperatedCase },
   ];
 
   functionalities?.forEach(functionality => {

@@ -39,6 +39,10 @@
       {
         "command": "text-case-changer.pascalcase",
         "title": "Pascal"
+      },
+      {
+        "command": "text-case-changer.hyphenseperated",
+        "title": "Hyphen seperated"
       }
     ],
     "keybindings": [
@@ -76,6 +80,12 @@
         "command": "text-case-changer.pascalcase",
         "key": "ctrl+alt+p",
         "mac": "cmd+alt+p",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "text-case-changer.hyphenseperated",
+        "key": "ctrl+alt+h",
+        "mac": "cmd+alt+h",
         "when": "editorTextFocus"
       }
     ]
