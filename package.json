@@ -1,0 +1,65 @@
+{
+  "name": "text-case-changer",
+  "displayName": "text-case-changer",
+  "description": "this extension changes case of selected text in editor",
+  "version": "0.0.1",
+  "publisher": "jitendrasoni",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "text-case-changer.uppercase",
+        "title": "Convert to uppercase text"
+      },
+      {
+        "command": "text-case-changer.lowercase",
+        "title": "Convert to lowercase text"
+      },
+      {
+        "command": "text-case-changer.camelcase",
+        "title": "Convert to camelcase text"
+      },
+      {
+        "command": "text-case-changer.snakecase",
+        "title": "Convert to snakecase text"
+      },
+      {
+        "command": "text-case-changer.capitalize",
+        "title": "Convert to capitalize text"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}

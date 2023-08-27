@@ -1,0 +1,1 @@
+this extension converts text to serveral cases
