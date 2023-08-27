@@ -1,3 +1,3 @@
 # Change Log
 
-Added more features in case conversion with more enhancements in previous functionalities.
+MODIFIED THE SNAKE CASE TO HANDLE ANY TYPE OF CASE
