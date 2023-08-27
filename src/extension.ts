@@ -33,12 +33,6 @@ function toPascalCase(text: string): string {
   return pascalCaseWords.join('');
 }
 
-// Rest of your code...
-
-function capitalizeFirstChar(text: string): string {
-  return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
 export function activate(context: vscode.ExtensionContext) {
   const functionalities = [
     { name: 'uppercase', method: toUpperCase },
