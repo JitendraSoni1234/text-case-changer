@@ -2,7 +2,7 @@
   "name": "text-case-changer",
   "displayName": "text-case-changer",
   "description": "this extension changes case of selected text in editor",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "jitendrasoni",
   "engines": {
     "vscode": "^1.81.0"
@@ -98,7 +98,60 @@
         "mac": "cmd+alt+n",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "text-case-changer.uppercase",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.lowercase",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.camelcase",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.snakecase",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.capitalize",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.pascalcase",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.hyphenseperated",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "text-case-changer.spaceseperated",
+          "group": "Text Case Changer",
+          "when": "editorTextFocus"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "text-case-changer",
+          "name": "Text Case Changer",
+          "icon": "images/logo.png"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
