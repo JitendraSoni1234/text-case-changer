@@ -43,37 +43,37 @@
     ],
     "keybindings": [
       {
-        "command": "extension.capitalize",
+        "command": "text-case-changer.capitalize",
         "key": "ctrl+shift+c",
         "mac": "cmd+shift+c",
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.uppercase",
+        "command": "text-case-changer.uppercase",
         "key": "ctrl+shift+u",
         "mac": "cmd+shift+u",
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.lowercase",
+        "command": "text-case-changer.lowercase",
         "key": "ctrl+shift+l",
         "mac": "cmd+shift+l",
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.camelcase",
-        "key": "ctrl+alt+c",
-        "mac": "cmd+option+c",
+        "command": "text-case-changer.camelcase",
+        "key": "ctrl+shift+b",
+        "mac": "cmd+shift+b",
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.snakecase",
+        "command": "text-case-changer.snakecase",
         "key": "ctrl+shift+s",
         "mac": "cmd+shift+s",
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.pascalcase",
+        "command": "text-case-changer.pascalcase",
         "key": "ctrl+shift+p",
         "mac": "cmd+shift+p",
         "when": "editorTextFocus"
