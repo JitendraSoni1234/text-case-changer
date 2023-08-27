@@ -22,23 +22,23 @@ function toSnakeCase(text: string): string {
 }
 
 function toHyphenSeperatedCase(text: string): string {
-  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
+  const words = text.split(/[_-]|[ ]|(?<=[a-z])(?=[A-Z])/);
   return words.join('-').toLowerCase();
 }
 
 function toSpaceSeperatedCase(text: string): string {
-  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
+  const words = text.split(/[_-]|[ ]|(?<=[a-z])(?=[A-Z])/);
   return words.join(' ').toLowerCase();
 }
 
 function toCamelCase(text: string): string {
-  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
+  const words = text.split(/[_-]|[ ]|(?<=[a-z])(?=[A-Z])/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
   return camelCaseWords.join('');
 }
 
 function toPascalCase(text: string): string {
-  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
+  const words = text.split(/[_-]|[ ]|(?<=[a-z])(?=[A-Z])/);
   const pascalCaseWords = words.map(word => capitalizeText(word));
   return pascalCaseWords.join('');
 }

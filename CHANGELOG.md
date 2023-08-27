@@ -1,3 +1,3 @@
 # Change Log
 
-ADDED MORE FEATURES LIKE NORMAL CASE OR SPACE SEPERATED AND HYPHEN SEPERATED CONVERSIONS
+bug fix for camel case from capital snake case
