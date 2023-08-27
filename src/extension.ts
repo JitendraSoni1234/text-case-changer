@@ -4,7 +4,7 @@ function capitalizeText(text: string): string {
   if (text.length === 0) {
     return text;
   }
-  return text.charAt(0).toUpperCase() + text.slice(1);
+  return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 }
 
 function toLowerCase(text: string): string {
@@ -22,23 +22,23 @@ function toSnakeCase(text: string): string {
 }
 
 function toHyphenSeperatedCase(text: string): string {
-  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
+  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
   return words.join('-').toLowerCase();
 }
 
 function toSpaceSeperatedCase(text: string): string {
-  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
+  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
   return words.join(' ').toLowerCase();
 }
 
 function toCamelCase(text: string): string {
-  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
+  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
   return camelCaseWords.join('');
 }
 
 function toPascalCase(text: string): string {
-  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
+  const words = text.split(/[_-]|(?<=[a-z])(?=[A-Z])/);
   const pascalCaseWords = words.map(word => capitalizeText(word));
   return pascalCaseWords.join('');
 }
