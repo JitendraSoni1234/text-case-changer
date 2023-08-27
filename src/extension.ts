@@ -22,19 +22,18 @@ function toSnakeCase(text: string): string {
 }
 
 function toHyphenSeperatedCase(text: string): string {
-  text = text.replace(/-/g, '_');
-  const words = text.split(/(?=[A-Z])|[_-]/);
+  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
   return words.join('-').toLowerCase();
 }
 
 function toCamelCase(text: string): string {
-  const words = text.split(/[_-]/);
+  const words = text.split(/[_-]|[ ]/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
   return camelCaseWords.join('');
 }
 
 function toPascalCase(text: string): string {
-  const words = text.split(/[_-]/);
+  const words = text.split(/[_-]|[ ]/);
   const pascalCaseWords = words.map(word => capitalizeText(word));
   return pascalCaseWords.join('');
 }
