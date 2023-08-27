@@ -15,20 +15,28 @@ function toUpperCase(text: string): string {
   return text.toUpperCase();
 }
 
+function toSnakeCase(text: string): string {
+  text = text.replace(/-/g, '_');
+  const words = text.split(/(?=[A-Z])/);
+  return words.join('_').toLowerCase();
+}
+
 function toCamelCase(text: string): string {
-  const words = text.split(/\s+/);
+  const words = text.split(/[_-]/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
   return camelCaseWords.join('');
 }
 
-function toSnakeCase(text: string): string {
-  return text.replace(/\s+/g, '_').toLowerCase();
+function toPascalCase(text: string): string {
+  const words = text.split(/[_-]/);
+  const pascalCaseWords = words.map(word => capitalizeText(word));
+  return pascalCaseWords.join('');
 }
 
-function toPascalCase(text: string): string {
-  const words = text.split(/\s+/);
-  const pascalCaseWords = words.map((word) => capitalizeText(word));
-  return pascalCaseWords.join('');
+// Rest of your code...
+
+function capitalizeFirstChar(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 export function activate(context: vscode.ExtensionContext) {
@@ -40,7 +48,7 @@ export function activate(context: vscode.ExtensionContext) {
     { name: 'capitalize', method: capitalizeText },
     { name: 'pascalcase', method: toPascalCase },
   ];
-  
+
   functionalities?.forEach(functionality => {
     let disposable = vscode.commands.registerCommand(`text-case-changer.${functionality?.name}`, () => {
       const editor = vscode.window.activeTextEditor;
