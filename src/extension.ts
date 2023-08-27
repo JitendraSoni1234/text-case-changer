@@ -26,6 +26,11 @@ function toHyphenSeperatedCase(text: string): string {
   return words.join('-').toLowerCase();
 }
 
+function toSpaceSeperatedCase(text: string): string {
+  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
+  return words.join(' ').toLowerCase();
+}
+
 function toCamelCase(text: string): string {
   const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
@@ -47,6 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
     { name: 'capitalize', method: capitalizeText },
     { name: 'pascalcase', method: toPascalCase },
     { name: 'hyphenseperated', method: toHyphenSeperatedCase },
+    { name: 'spaceseperated', method: toSpaceSeperatedCase },
   ];
 
   functionalities?.forEach(functionality => {

@@ -2,7 +2,7 @@
   "name": "text-case-changer",
   "displayName": "text-case-changer",
   "description": "this extension changes case of selected text in editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "jitendrasoni",
   "engines": {
     "vscode": "^1.81.0"
@@ -43,6 +43,10 @@
       {
         "command": "text-case-changer.hyphenseperated",
         "title": "Hyphen seperated"
+      },
+      {
+        "command": "text-case-changer.spaceseperated",
+        "title": "Space separated"
       }
     ],
     "keybindings": [
@@ -86,6 +90,12 @@
         "command": "text-case-changer.hyphenseperated",
         "key": "ctrl+alt+h",
         "mac": "cmd+alt+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "text-case-changer.spaceseperated",
+        "key": "ctrl+alt+n",
+        "mac": "cmd+alt+n",
         "when": "editorTextFocus"
       }
     ]
