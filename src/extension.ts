@@ -27,13 +27,13 @@ function toHyphenSeperatedCase(text: string): string {
 }
 
 function toCamelCase(text: string): string {
-  const words = text.split(/[_-]|[ ]/);
+  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
   const camelCaseWords = words.map((word, index) => (index === 0 ? word.toLowerCase() : capitalizeText(word)));
   return camelCaseWords.join('');
 }
 
 function toPascalCase(text: string): string {
-  const words = text.split(/[_-]|[ ]/);
+  const words = text.split(/(?=[A-Z])|[_-]|[ ]/);
   const pascalCaseWords = words.map(word => capitalizeText(word));
   return pascalCaseWords.join('');
 }
