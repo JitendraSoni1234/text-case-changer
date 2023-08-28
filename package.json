@@ -1,6 +1,6 @@
 {
   "name": "text-case-changer",
-  "displayName": "text-case-changer",
+  "displayName": "Text Case Changer",
   "description": "this extension changes case of selected text in editor",
   "version": "0.1.4",
   "publisher": "jitendrasoni",
@@ -52,8 +52,8 @@
     "keybindings": [
       {
         "command": "text-case-changer.capitalize",
-        "key": "ctrl+alt+c",
-        "mac": "cmd+alt+c",
+        "key": "ctrl+alt+a",
+        "mac": "cmd+alt+a",
         "when": "editorTextFocus"
       },
       {
@@ -70,8 +70,8 @@
       },
       {
         "command": "text-case-changer.camelcase",
-        "key": "ctrl+alt+b",
-        "mac": "cmd+alt+b",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c",
         "when": "editorTextFocus"
       },
       {
