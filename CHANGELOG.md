@@ -1,3 +1,3 @@
 # Change Log
 
-bug fix for camel case from capital snake case
+bug fix for snake case conversion from normal text

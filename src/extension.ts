@@ -16,8 +16,7 @@ function toUpperCase(text: string): string {
 }
 
 function toSnakeCase(text: string): string {
-  text = text.replace(/-/g, '_');
-  const words = text.split(/(?=[A-Z])/);
+  const words = text.split(/[_-]|[ ]|(?<=[a-z])(?=[A-Z])/);
   return words.join('_').toLowerCase();
 }
 
