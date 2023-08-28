@@ -53,7 +53,7 @@ If you encounter any issues or have suggestions for improving the Text Case Chan
 
 ## License
 
-This extension is released under the [MIT License](LICENSE).
+This extension is released under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 ---
 
