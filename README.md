@@ -14,7 +14,7 @@
 ## Installation
 
 1. Launch Visual Studio Code.
-2. Go to the Extensions view by clicking on the square icon in the sidebar on the left or press `Ctrl+Shift+X`.
+2. Go to the Extensions view by clicking on the square icon in the sidebar on the left or press windows: `Ctrl+Shift+X`, mac: `⌘+Shift+X`.
 3. Search for "text-case-changer" in the Extensions Marketplace.
 4. Click the **Install** button next to the extension that appears.
 5. Once the installation is complete, you'll find the extension's icon in the top-right corner of the editor.
@@ -30,20 +30,20 @@
 
 You can also use keyboard shortcuts to quickly change the case of selected text:
 
-- Uppercase: `Ctrl+Shift+U`
-- Lowercase: `Ctrl+Shift+L`
-- Snake Case: `Ctrl+Shift+S`
-- Hyphen Separated: `Ctrl+Shift+H`
-- Camel Case: `Ctrl+Shift+C`
-- Pascal Case: `Ctrl+Shift+P`
-- Space Separated: `Ctrl+Shift+N`
-- Capitalize: `Ctrl+Shift+A`
+- Uppercase: windows: `Ctrl+Shift+U`, mac: `⌘+Shift+U`
+- Lowercase: windows: `Ctrl+Shift+L`, mac: `⌘+Shift+L`
+- Snake Case: windows: `Ctrl+Shift+S`, mac: `⌘+Shift+S`
+- Hyphen Separated: windows: `Ctrl+Shift+H`, mac: `⌘+Shift+H`
+- Camel Case: windows: `Ctrl+Shift+C`, mac: `⌘+Shift+C`
+- Pascal Case: windows: `Ctrl+Shift+P`, mac: `⌘+Shift+P`
+- Space Separated: windows: `Ctrl+Shift+N`, mac: `⌘+Shift+N`
+- Capitalize: windows: `Ctrl+Shift+A`, mac: `⌘+Shift+A`
 
 ## Configuration
 
 The Text Case Changer extension provides some configuration options to customize its behavior. To access the configuration:
 
-1. Go to **File** > **Preferences** > **Settings** or use the shortcut `Ctrl+,`.
+1. Go to **File** > **Preferences** > **Settings** or use the shortcut windows: `Ctrl+,`, mac: `⌘+,`.
 2. Search for "text-case-changer" in the search bar.
 3. Adjust the settings according to your preferences.
 
