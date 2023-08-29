@@ -2,7 +2,7 @@
   "name": "text-case-changer",
   "displayName": "Text Case Changer",
   "description": "this extension changes case of selected text in editor",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "publisher": "jitendrasoni",
   "engines": {
     "vscode": "^1.81.0"
